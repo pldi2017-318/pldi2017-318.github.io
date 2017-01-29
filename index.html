@@ -1,0 +1,46 @@
+<br><br>
+<span style="font-family: Bitter, Georgia, serif; font-size: 30px;">Download</span>
+<ul>
+  <li><strong>Project: [zip]</strong></li>
+  <li><strong>Per-pass proof generation code
+</strong>We insert proof generation code for each pass.  We counted how many lines of the proof generation code are inserted (<em>green</em> lines in the linked files), in order to deal with how many lines of the optimization code (<em>yellow</em> lines in the linked files).
+<br>
+<center>
+<table border=1>
+<tr><th>Opt.</th><th>Covered Line #</th><th>Proof Gen. Line #</th></tr>
+<tr><td>InstCombine</td><td>880</td><td>4950</td></tr>
+<tr><td>GVN</td><td>1039</td><td>955</td></tr>
+<tr><td>SROA</td><td>568</td><td>1444</td></tr>
+</table>
+&lt;Line of Codes&gt;
+</center>
+<ul>
+  <li>Register promotion in SROA [<a href="htmls/PromoteMemoryToRegister.html">PromoteMemoryToRegister.html</a>]</li>
+  <li>Global Value Numbering [<a href="htmls/GVN.html">GVN.html</a>]</li>
+  <li> Instruction Combining<br>
+    <ul>
+      <li> Interesting Transformations<br>
+        - <span style="text-decoration: underline;">
+        <a href="htmls/InstCombine-opts/add_assoc/InstructionCombining.cpp.html">add-assoc</a></span><br>
+        - <span style="text-decoration: underline;">
+        <a href="htmls/InstCombine-opts/load_load/InstCombineLoadStoreAlloca.cpp.html">load-load/store</a></span><br>
+        - dead-store-elim <span style="text-decoration: underline;">
+        <a href="htmls/InstCombine-opts/dead_store_elim1/InstCombineLoadStoreAlloca.cpp.html">(1)</a>,
+        <a href="htmls/InstCombine-opts/dead_store_elim2/InstructionCombining.cpp.html">(2)</a></span><br>
+        - <a href="htmls/InstCombine-opts/foldphi/InstCombinePHI.cpp.html"><span style="text-decoration: underline;">fold-phi</span></a>
+      </li>
+      <li> Whole Optimization (no yellow lines)<br>
+        [<a href="htmls/InstCombine/InstCombineAddSub.cpp.html">InstCombineAddSub.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineAndOrXor.cpp.html">InstCombineAndOrXor.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineCasts.cpp.html">InstCombineCasts.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineCompares.cpp.html">InstCombineCompares.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineLoadStoreAlloca.cpp.html">InstCombineLoadStoreAlloca.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineMulDivRem.cpp.html">InstCombineMulDivRem.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombinePHI.cpp.html">InstCombinePHI.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineSelect.cpp.html">InstCombineSelect.html</a>]<br>
+        [<a href="htmls/InstCombine/InstCombineShifts.cpp.html">InstCombineShifts.html</a>]<br>
+        [<a href="htmls/InstCombine/InstructionCombining.cpp.html">InstructionCombining.html</a>]<br>
+      </li>
+    </ul>
+  </li>
+</ul>
